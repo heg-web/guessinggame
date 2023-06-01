@@ -1,11 +1,8 @@
-package guessinggame;
 /*
 Java game “Guess a Number” that allows user to guess a random number that has been generated.
 
 source: https://hackr.io/blog/java-projects
 */
-
-import javax.swing.*;
 
 public class GuessingGame {
     public static void main(String[] args) {
@@ -15,10 +12,10 @@ public class GuessingGame {
         int count = 1;
 
         while (userAnswer != computerNumber) {
-            String response = JOptionPane.showInputDialog(null,
-                    "Enter a guess between 1 and 100", "Guessing Game", 3);
+            System.out.println("Enter a guess between 1 and 100: ");
+            String response = System.console().readLine();
             userAnswer = Integer.parseInt(response);
-            JOptionPane.showMessageDialog(null, "" + determineGuess(userAnswer, computerNumber, count));
+            System.out.println(determineGuess(userAnswer, computerNumber, count));
             count++;
         }
     }
