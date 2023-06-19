@@ -27,7 +27,7 @@ You can incorporate further details:
     - Add error handling for non-integer user input.
     - Use constants for the minimum and maximum values instead of hardcoding them.
     - Use a do-while loop
-Add comments to explain the purpose of the code and each method.
+    - Add comments to explain the purpose of the code and each method.
 - Limiting the number of attempts. 
 - Playing another round. 
 - Choose a difficulty level
